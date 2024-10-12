@@ -17,7 +17,7 @@ task.spawn(function()
     if not getgenv().ExecutedUpdate == true then getgenv().ExecutedUpdate = true
         while true do task.wait(1);
             pcall(function()
-                Version = http_request({Url = "https://raw.githubusercontent.com/Lvl9999/FlamesW/new/Version"; Method = "GET";})
+                Version = http_request({Url = "https://raw.githubusercontent.com/FlamesW/NEW/main/Version",Method = "GET";})
                 if not Version.Body:find(getgenv().CurrentVersion) then
                     if not PushedUpdate or LastVersion ~= getgenv().CurrentVersion then
                         getgenv().Notify("http://www.roblox.com/asset/?id=11803247078","Flame's Notification","Flame's Hub Just Updated, Execute again to fetch the newest version!","","",9e9);
