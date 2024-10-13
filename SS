@@ -299,7 +299,7 @@ getgenv().Configurations = function()
 
         -- [Flame's Hub UI Scripts]
         getgenv().AutoGoingRainbow = false;
-        game:GetService("CoreGui").StatisticsGUI.Enabled = false;
+        --game:GetService("CoreGui").StatisticsGUI.Enabled = false;
     end)
 end
 
@@ -316,7 +316,7 @@ for i,v in ipairs(game:GetService("Lighting"):GetChildren()) do
 end
 
 -----------------------------------[[ Main Ui Libs ]]------------------------------------------------------------------
-local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/Lvl9999/DrRay/main/Backup"))();
+local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/FlamesW/DrRay/main/Backup"))();
 -----------------------------------[[ Main Ui Libs ]]------------------------------------------------------------------
 
 getgenv().StartLoading = function(z)
@@ -3640,26 +3640,26 @@ HomeTab.newButton('Use Code: "'..Code8..'"','',function()
     game:GetService("ReplicatedStorage"):WaitForChild("GlobalUsedRemotes"):WaitForChild("EnterCode"):FireServer(unpack(args));
 end)
 
-HomeTab.newLabel("Server Hop Scripts   🌐");
-HomeTab.newButton("Auto find The Arbiter   🌟  (Copied to Clipboard)","",function()
-    setclipboard("https://github.com/Lvl9999/TheArbiter/tree/main");
-    getgenv().Notify("http://www.roblox.com/asset/?id=11803247078","Flame's Notification","Copied to Clipboard","right",1.5);
-end)
+--HomeTab.newLabel("Server Hop Scripts   🌐");
+--HomeTab.newButton("Auto find The Arbiter   🌟  (Copied to Clipboard)","",function()
+    --setclipboard("https://github.com/Lvl9999/TheArbiter/tree/main");
+   -- getgenv().Notify("http://www.roblox.com/asset/?id=11803247078","Flame's Notification","Copied to Clipboard","right",1.5);
+--end)
 
-HomeTab.newButton("Auto find Space Curse   ☄️  (Copied to Clipboard)","",function()
-    setclipboard("https://github.com/Lvl9999/SpaceCurse/tree/main");
-    getgenv().Notify("http://www.roblox.com/asset/?id=11803247078","Flame's Notification","Copied to Clipboard","right",1.5);
-end)
+--HomeTab.newButton("Auto find Space Curse   ☄️  (Copied to Clipboard)","",function()
+   -- setclipboard("https://github.com/Lvl9999/SpaceCurse/tree/main");
+    --getgenv().Notify("http://www.roblox.com/asset/?id=11803247078","Flame's Notification","Copied to Clipboard","right",1.5);
+--end)
 
 HomeTab.newButton("Auto One For All Finder   🦸  (PATCHED)","",function()
     --setclipboard("https://github.com/Lvl9999/OneForAll/tree/main");
-    getgenv().Notify("http://www.roblox.com/asset/?id=11803247078","Flame's Notification","Patched, Wait for Fix","right",1.5);
-end)
+    --getgenv().Notify("http://www.roblox.com/asset/?id=11803247078","Flame's Notification","Patched, Wait for Fix","right",1.5);
+--end)
 
 HomeTab.newLabel("Quick Scripts   🚀");
-HomeTab.newButton("Animation Grabber","",function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Lvl9999/AnimationGrabber/main/Universal"))();
-end)
+--HomeTab.newButton("Animation Grabber","",function()
+   -- loadstring(game:HttpGet("https://raw.githubusercontent.com/Lvl9999/AnimationGrabber/main/Universal"))();
+--end)
 
 HomeTab.newButton("Infinite Yield","",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))();
@@ -3680,7 +3680,7 @@ end)
 HomeTab.newLabel("Flame's Hub Stuff  🔥");
 HomeTab.newButton("Official Discord Server (Copied to Clipboard)","",function()
     task.spawn(function()getgenv().Notify("http://www.roblox.com/asset/?id=11803247078","Flame's Notification","Copied To Clipboard!","","right",1.5);end)
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Lvl9999/FlamesW/new/Discord"))();
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/FlamesW/NEW/main/Discord"))();
 end)
 
 HomeTab.newToggle("Flame's Hub, Go Rainbow Please","",getgenv().AutoGoingRainbow or false,function(Value)
@@ -3690,7 +3690,7 @@ end)
 
 HomeTab.newButton("Reload Flame's Hub","",function()
     task.spawn(function()getgenv().Notify("http://www.roblox.com/asset/?id=11803247078","Flame's Notification","Reloading Hub...","","",2.5);end)
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Lvl9999/FlamesW/new/Launcher"))();
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/FlamesW/NEW/main/Launcher"))();
 end)
 
 HomeTab.newButton("Goodbye Flame's Hub   👋","",function()
@@ -3705,7 +3705,7 @@ end)
 
 HomeTab.newButton("Reset Flame's Hub Config","",function()
     task.spawn(function()getgenv().Configurations();getgenv().ResetConfigurations();end)
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Lvl9999/FlamesW/new/Launcher"))();
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/FlamesW/NEW/main/Launcher"))();
 end)
 
 local StorageTab = DrRayLibrary.newTab("Storage","http://www.roblox.com/asset/?id=6870729295");
@@ -3933,11 +3933,11 @@ FarmingTab.newButton("Equip Shinra Kusakabe (Best for Private Server Autofarm)",
     end)
 end)
 
-FarmingTab.newLabel("Statistics GUI   📊");
-FarmingTab.newToggle("Show / Hide Statistics GUI","",false,function(Value)
+--FarmingTab.newLabel("Statistics GUI   📊");
+--FarmingTab.newToggle("Show / Hide Statistics GUI","",false,function(Value)
     getgenv().ToggleStatisticsGUI = Value
-    game:GetService("CoreGui").StatisticsGUI.Enabled = getgenv().ToggleStatisticsGUI;
-end)
+    --game:GetService("CoreGui").StatisticsGUI.Enabled = getgenv().ToggleStatisticsGUI;
+--end)
 
 FarmingTab.newLabel("Auto Leveling  📈");
 FarmingTab.newToggle("Auto Buy + Auto Sell Rokakaka (Use At 2x Weekend)","",getgenv().AutoLevelingUp or false,function(Value)
@@ -4433,4 +4433,4 @@ task.spawn(function()
         end)
         getgenv().ToggleVisibility = true;
     end
-end) task.spawn(function()loadstring(game:HttpGet("https://raw.githubusercontent.com/Lvl9999/SakuraStand/main/StatisticsGUI"))();end)
+end)
