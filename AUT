@@ -1,6 +1,6 @@
 -- // Kicks dumbass people \\ --
 task.spawn(function()
-    if #game:GetService("Players"):GetPlayers() >= 8 then
+    if #game:GetService("Players"):GetPlayers() >= 6 then
         game.Players.LocalPlayer:Kick("Blud is in a public server 💀 (Use Ps Cracker 🐵)");
     end
 end)
