@@ -16,7 +16,7 @@ Operational = 🟢 | Unoperational = 🔴 | In Maintenance = 🟠 | In Progress 
   In Total: 3
 
 # Flames Hub's Loadstring:
-### Join the discord server :] [Here](https://discord.gg/nJxSQyB7Sr)
+### Join the discord server :] [Here](https://discord.gg/flam3s)
 ```lua
 getgenv().ToggleUI = "J";
 loadstring(game:HttpGet("https://raw.githubusercontent.com/FlamesW/NEW/main/Launcher"))();
