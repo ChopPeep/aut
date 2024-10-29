@@ -1,8 +1,8 @@
 repeat task.wait(0.25) until game:IsLoaded();
-getgenv().CurrentVersion = "1.23";
+getgenv().CurrentVersion = "1.22";
 
 --------------------------------[ Main Loading UI ]------------------------------------
--- loadstring(game:HttpGet("https://raw.githubusercontent.com/FlamesW/Loader/main/UI"))();
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FlamesW/Loader/main/UI"))();
 ---------------------------------------------------------------------------------------
 
 local SupportedGames = {
