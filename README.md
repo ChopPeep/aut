@@ -19,7 +19,7 @@ Operational = 🟢 | Unoperational = 🔴 | In Maintenance = 🟠 | In Progress 
 ### Join the discord server :] [Here](https://discord.gg/flam3s)
 ```lua
 getgenv().ToggleUI = "J";
-loadstring(game:HttpGet("https://raw.githubusercontent.com/FlamesW/NEW/main/Launcher"))();
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ChopPeep/NEW/main/Launcher"))();
 ```
 ##### Warning: Some features might get you banned from being reported by players.
 
